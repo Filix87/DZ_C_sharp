@@ -13,9 +13,9 @@ bool flag = int.TryParse(Console.ReadLine()!, out N);
 if (flag)
 {
     if (N % 2 == 0)
-        Console.Write("Число четное");
+        Console.Write("да");
     else
-        Console.Write("Число нечетное");
+        Console.Write("Нет");
 }
 else
     Console.Write("Неверный ввод");
