@@ -8,6 +8,14 @@
 
 int N;
 Console.Write("Введите число: ");
-int.TryParse(Console.ReadLine()!, out N);
+bool flag = int.TryParse(Console.ReadLine()!, out N);
 
-Console.Write($"{N} -> {N / 10 % 10}");
+if (flag)
+{
+    if (N < 999 && N > 100)
+        Console.Write($"{N} -> {N / 10 % 10}");
+    else
+        Console.Write("Введите трехзначное число");
+}
+else
+    Console.Write("Неверный ввод");
