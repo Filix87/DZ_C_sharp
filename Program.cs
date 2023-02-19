@@ -6,3 +6,8 @@
 918 -> 1
 */
 
+int N;
+Console.Write("Введите число: ");
+int.TryParse(Console.ReadLine()!, out N);
+
+Console.Write($"{N} -> {N / 10 % 10}");
