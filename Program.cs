@@ -6,7 +6,6 @@
 
 int N = 0;
 int N3 = 0;
-
 Console.Write($"Введите 5-и значное число: ");
 int.TryParse(Console.ReadLine()!, out N);
 int i, N2 = N;
@@ -18,11 +17,8 @@ do
     N2 /= 10;
 }
 while (N2 > 0);
-
 int.TryParse(num, out N3);
-
 Console.Write($"{N}, {N3} - ");
-
 if (N == N3)
     Console.Write($"Да");
 else
