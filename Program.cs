@@ -13,5 +13,5 @@ Console.Write($"Введите степень ");
 double.TryParse(Console.ReadLine()!, out b);
 
 if (a != 0 && b != 0)
-    Console.Write($"{step = Math.Pow(a, b)}");
+    Console.Write($"{a}, {b} -> {step = Math.Pow(a, b)}");
 else Console.Write($"Неверный ввод");
