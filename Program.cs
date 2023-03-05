@@ -18,4 +18,4 @@ for (int i = 0; i < array.Length; i++)
         count++;
     }
 }
-Console.WriteLine("Количество четных чисел: " + count);
+Console.Write($"Количество четных чисел: {count}");
