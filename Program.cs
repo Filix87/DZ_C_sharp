@@ -6,10 +6,10 @@
 8 4 2 4         
 17 -> такого числа в массиве нет                        */
 
-int m = Prompt("Введите количество строк: ");
-int n = Prompt("Введите количество столбцов: ");
+int m = el("Введите количество строк: ");
+int n = el("Введите количество столбцов: ");
 int[,] array = new int[m, n];
-int Prompt(string arr)
+int el(string arr)
 {
     Console.Write(arr);
     int num = int.Parse(Console.ReadLine()!);
