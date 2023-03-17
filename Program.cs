@@ -6,3 +6,28 @@
 27(0,0,1) 90(0,1,1)
 26(1,0,1) 55(1,1,1)                      */
 
+int[,,] array = new int[2, 2, 2];
+int num = 10;
+for (int i = 0; i < 2; i++)
+{
+    for (int j = 0; j < 2; j++)
+    {
+        for (int k = 0; k < 2; k++)
+        {
+            array[i, j, k] = num;
+            num = num + 12;
+        }
+    }
+}
+Console.WriteLine("Получился такой массив размером 2 x 2 x 2");
+for (int i = 0; i < 2; i++)
+{
+    for (int j = 0; j < 2; j++)
+    {
+        for (int k = 0; k < 2; k++)
+        {
+            Console.Write($"{array[i, j, k]}({i},{j},{k})");
+        }
+        Console.WriteLine();
+    }
+}
