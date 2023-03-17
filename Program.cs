@@ -11,12 +11,12 @@ Console.Write($"Введите число: ");
 int.TryParse(Console.ReadLine(), out n);
 Console.Write($"N = {n} -> ");
 Console.WriteLine($"{PrintNumbers(m, n)}");
-string PrintNumbers(int start, int end)
+string PrintNumbers(int m, int n)
 {
-    if (end == start)
+    if (n == m)
     {
-        return end.ToString();
+        return n.ToString();
     }
-    string result = PrintNumbers(start + 1, end) + ", " + start.ToString();
+    string result = PrintNumbers(m + 1, n) + ", " + m.ToString();
     return result;
 }
