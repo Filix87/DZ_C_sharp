@@ -9,11 +9,8 @@ int m = 1;
 int n = 0;
 Console.Write($"Введите число: ");
 int.TryParse(Console.ReadLine(), out n);
-
 Console.Write($"N = {n} -> ");
-
 Console.WriteLine($"{PrintNumbers(m, n)}");
-
 string PrintNumbers(int start, int end)
 {
     if (end == start)
